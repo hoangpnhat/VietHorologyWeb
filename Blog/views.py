@@ -1,14 +1,12 @@
+from django.db import models
 from django.shortcuts import render
-from django.views.generic import ListView,DetailView
+from django.views.generic import ListView,DetailView,CreateView
 from .models import BlogModel
 # Create your views here.
-class HomeView(ListView):
-    model = BlogModel
-    template_name = 'home.html'
-class ArticleDetailView(DetailView):
-    model = BlogModel
-    context_object_name = 'blog' 
-    template_name = 'article_detail.html'
+def home(request):
+    return render(request,'home.html')
+def lastest(request):
+    return render(request,'latest.html')
 def login(request):
     return render(request,'login.html')
     

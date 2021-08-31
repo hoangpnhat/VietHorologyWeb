@@ -58,7 +58,7 @@ ROOT_URLCONF = 'VietHorology.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Blog/templates/Blogs'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
