@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'froala_editor',
     'Blog',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [

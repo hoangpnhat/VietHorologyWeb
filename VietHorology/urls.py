@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 urlpatterns = [
     path('',include("Blog.urls")),
+    path('api/',include("Blog.urls_api")),
     path('admin/', admin.site.urls),
     path('froala_editor/',include('froala_editor.urls')),
 ]

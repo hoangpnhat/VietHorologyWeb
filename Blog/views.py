@@ -9,4 +9,5 @@ def lastest(request):
     return render(request,'latest.html')
 def login(request):
     return render(request,'login.html')
-    
+def register(request):
+    return render(request,'register.html')
